@@ -50,3 +50,9 @@ object Logger {
         jsonLogPath = newPath
     }
 }
+
+fun main() {
+    // Singleton
+    Logger.log("inf", "MainModule", "Application started")
+    Logger.log("err", "NetworkModule", "Network error occurred")
+}
